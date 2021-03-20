@@ -67,7 +67,7 @@ def check_permission(permission, payload):
         raise AuthError({
             'code': 'permission string is not in the payload permissions',
             'description': 'permission is expected.'
-        }, 403)
+        }, 401)
     return True
 
 
